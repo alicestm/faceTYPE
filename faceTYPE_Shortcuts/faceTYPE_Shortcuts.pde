@@ -28,6 +28,7 @@ boolean control = false;
 boolean b = false;
 boolean i = false;
 boolean u = false;
+String formatValue="regular";
 
 void setup(){
   size(1000 ,800);
@@ -57,6 +58,9 @@ void draw(){
  input.updateanddraw();
 
  cockpit.updateanddraw();
+
+ cockpit.drawFormat(formatValue);
+ 
 }
 
 void keyPressed() { 
@@ -88,12 +92,14 @@ void keyPressed() {
     
  if (shift && control && i){
       input.setFont("italic");
+      formatValue="italic";
     }
  if (u && shift && control){
       input.setFont("underlined");
-    }
+      formatValue="underlined";    }
   if (b && shift && control){
       input.setFont("bold");
+      formatValue="bold";
     }
     
    
@@ -109,6 +115,7 @@ void keyPressed() {
      b=false;
      u=false;
      input.setFont("regular");
+     formatValue="regular";
     }
     
   if (key == CODED){

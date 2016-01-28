@@ -1,5 +1,5 @@
 class Cockpit{
-     PImage img = loadImage("logo_facetype.png");
+     PImage img = loadImage("logo_shortcuts.png");
  Cockpit(){
    
  }
