@@ -1,7 +1,7 @@
 # faceTYPE
 formatting text with face gestures. use faceOSC from Kyle McDonald to run the code
 
-To use the Original Applocation, use faceTEST original. 
+To use the Original Applocation, use faceTYPE original. 
 
 Usertest faceType
 - same as faceTYPE, but with the possibility to measure times. No deleting is possible.
